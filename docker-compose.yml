@@ -3,8 +3,16 @@ services:
   ame:
     image: python:3.7-slim-bullseye
     container_name: "ame"
-    build: .
+    build: ./
     volumes:
       - type: bind
         source: ./mnt
         target: /mnt
+    # mage:
+    #   image: python:3.7-slim-bullseye
+    #   container_name: "mage"
+    #   # build: ./
+    #   volumes:
+    #     - type: bind
+    #       source: ./mnt
+    #       target: /mnt
